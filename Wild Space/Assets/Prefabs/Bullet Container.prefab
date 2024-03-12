@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6371425848773326656}
   - component: {fileID: 4001898629893940126}
   - component: {fileID: -6095656822654720600}
+  - component: {fileID: 4595442006064739555}
   m_Layer: 0
   m_Name: Bullet Container
   m_TagString: Bullet
@@ -112,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a54dc876047eb14783f93b58287a0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdTime: 0.1
+  holdTime: 0.01
 --- !u!114 &-6095656822654720600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +128,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightBound: 30
   leftBound: -25
+--- !u!114 &4595442006064739555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787563000688491979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782ea7f28b6ee1742a2fb9b5fc39c87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
 --- !u!1 &5387058893561762931
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,14 +295,14 @@ MonoBehaviour:
   enemyCollisionEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 811ee0a2f5076bb4f8373ff19582db15, type: 2}
-        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
-        m_MethodName: UpdateValue
+      - m_Target: {fileID: 11400000, guid: 2cb1672129834204da4014394a73d70b, type: 2}
+        m_TargetAssemblyTypeName: HealthBar, Assembly-CSharp
+        m_MethodName: TakeDamage
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
