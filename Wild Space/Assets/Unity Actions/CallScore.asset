@@ -9,14 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea3e5997f988f8748b7489a2e19e61a8, type: 3}
-  m_Name: Enemy Health
+  m_Script: {fileID: 11500000, guid: 0a1bc754e35cbf64daab50c72122d14f, type: 3}
+  m_Name: CallScore
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  currentHealth: 0
-  onValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onHealthZero:
-    m_PersistentCalls:
-      m_Calls: []
